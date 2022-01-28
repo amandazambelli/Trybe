@@ -1,0 +1,18 @@
+#textos {
+    text-align: center;
+
+}
+
+li:hover {
+    background-color: blue;
+
+}
+
+li:active {
+    font-family: monospace;
+}
+
+li {
+    list-style: none;
+
+}
