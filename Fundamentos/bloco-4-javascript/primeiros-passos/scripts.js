@@ -92,26 +92,64 @@
 //}
 
 
-const nota = 66;
+//const nota = 99;
 
-If (nota < 0 || nota > 100) {
-  console.log("erro");
-} 
-else if (nota >= 90) {
-  console.log("A");
-} 
-else if (nota >= 80) {
-  console.log("B");
-} 
-else if (nota >= 70) {
-  console.log("C");
-} 
-else if (nota >= 60) {
-  console.log("D");
-} 
-else if (nota >= 50) {
-  console.log("E");
-} 
-else if (nota < 50) {
-  console.log("F");
-}
+//if (nota < 0 || nota > 100) {
+//  console.log("erro");
+//} 
+//else if (nota >= 90) {
+//  console.log("A");
+//} 
+//else if (nota >= 80) {
+//  console.log("B");
+//} 
+//else if (nota >= 70) {
+//  console.log("C");
+//} 
+//else if (nota >= 60) {
+//  console.log("D");
+//} 
+//else if (nota >= 50) {
+//  console.log("E");
+//} 
+//else if (nota < 50) {
+//  console.log("F");
+//}
+
+
+//const num1 = 3;
+//const num2 = 3;
+//const num3 = 5;
+
+//if (num1 % 2 === 0 || num2 % 2 === 0 || num3 % 2 ===0) {
+//  console.log(true)
+//} else {
+//  console.log(false)
+//}
+
+//let a = 2;
+//let b = 7;
+//let c = 12;
+
+//let impar = false
+
+//if (a % 2 !==0 || b % 2 !== 0 || c % 2 !==0) {
+//  impar = true
+//}
+
+//console.log(impar);
+
+
+//let custoProduto = -1000;
+//let valorVenda = 1500;
+//let custoTotal = (0.2 * custoProduto) + custoProduto
+//let lucro = valorVenda - custoTotal
+
+//if (custoProduto >= 0 && valorVenda >= 0) {
+//  console.log(lucro * 1000);
+//}
+//else {
+//  console.log("Erro")
+//}
+
+
