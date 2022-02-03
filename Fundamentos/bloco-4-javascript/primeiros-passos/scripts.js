@@ -153,3 +153,14 @@
 //}
 
 
+//let menu = ['Home', 'Serviços', 'Portfólio', 'Links'];
+
+//menu.push('Contato')
+//console.log(menu);
+
+
+let names = ['João', 'Maria', 'Antônio', 'Margarida'];
+
+for (let name of names) {
+  console.log(name);
+}
