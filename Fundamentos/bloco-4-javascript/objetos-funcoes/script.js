@@ -16,12 +16,8 @@ console.log("Bem-vinda, " + info.personagem);
 //  2 - Insira no objeto uma nova propriedade com o nome de chave 'recorrente' e o valor 'Sim' 
 //  e, em seguida, imprima o objeto no console.
 
-let info = {
-    personagem: 'Margarida',
-    origem: 'Pato Donald',
-    nota: 'Namorada do personagem principal nos quadrinhos do Pato Donald',
-    recorrente: 'Sim',
-  };
+info.recorrente = "Sim";
+
 //console.log(info);
 
 
@@ -52,7 +48,56 @@ let info = {
     recorrente: "Sim",
   };
 
-  console.log(info.personagem + " " + info2.personagem);
-  console.log(info.origem + " " + info2.origem);
-  console.log(info.nota + " " + info2.nota);
-  console.log(info.recorrente + " " + info2.recorrente);
+ for (let key in info) {
+     if (key === "recorrente" && info[key] == "Sim" && info2[key] == "Sim") {
+         console.log("ambos são recorrentes")
+     } else {
+         console.log(info[key] + " e " + info2[key]);
+     }
+ }
+
+  // Usando o objeto abaixo, faça os exercícios a seguir:
+
+  let leitor = {
+    nome: 'Julia',
+    sobrenome: 'Pessoa',
+    idade: 21,
+    livrosFavoritos: [
+      {
+        titulo: 'O Pior Dia de Todos',
+        autor: 'Daniela Kopsch',
+        editora: 'Tordesilhas',
+      },
+    ],
+  };
+
+  // 6 - Acesse as chaves nome , sobrenome e titulo , que está dentro da chave livrosFavoritos , 
+  // e faça um console.log no seguinte formato: 
+  // "O livro favorito de Julia Pessoa se chama 'O Pior Dia de Todos'".
+
+  // console.log("O livro favorito de", leitor.nome, leitor.sobrenome, "se chama", leitor.livrosFavoritos[0].titulo)
+
+
+  // 7 - Adicione um novo livro favorito na chave livrosFavoritos , que é um array . 
+  // Atribua a esta chave um objeto contendo as seguintes informações:
+
+ 
+  leitor.livrosFavoritos.push (
+      {
+        titulo: 'Harry Potter e o Prisioneiro de Azkaban',
+        autor: 'JK Rowling',
+        editora: 'Rocco',
+      }
+  );
+    
+
+// console.log(leitor)
+
+  // 8 - Acesse as chaves nome e livrosFavoritos e faça um console.log no seguinte formato:
+  // "Julia tem 2 livros favoritos".
+
+if (leitor.livrosFavoritos.length >= 2) {
+    console.log(leitor.nome + " tem " + leitor.livrosFavoritos.length + " livros favoritos.")
+} else {
+    console.log(leitor.nome + " tem " + leitor.livrosFavoritos.length + " ivro favorito.")
+}
