@@ -75,19 +75,167 @@ if (pessoa >= 18) {
     console.log("A pessoa é menor de idade");
 }*/
 
+// Crie um algoritmo que conte quantos números do intervalo entre 2 e 150 são divisíveis por 3.
+// Caso a quantidade seja igual a 50, exiba uma mensagem secreta.
+
+/*let intervalo = [];
+
+for (i = 2; i <= 150; i += 1) {
+    if (i % 3 === 0) {
+        intervalo.push(i);
+    }
+}
+
+if (intervalo.length === 50) {
+    console.log("Mensagem secreta");
+}*/
+
+
+
+//crie um algoritmo que retorne o fatorial de 10.
+
+/*let fatorial = 1;
+
+for (index = 10; index >= 1; index -= 1) {
+    fatorial = fatorial * index
+}
+
+console.log(fatorial)*/
+
+
+/*let word = 'tryber';
+let palavrareversa = '';
+
+for (index = word.length -1; index < word.length && index >= 0; index -= 1) {
+    palavrareversa = palavrareversa + word[index] //ou palavrareversa += word[i]
+}
+
+console.log(palavrareversa);*/
 
 
 
 
+//Escreva dois algoritmos: um que retorne a maior palavra deste array e outro que retorne a menor.
+//Considere o número de caracteres de cada palavra.
+
+
+/*let array = ['java', 'javascript', 'python', 'html', 'css'];
+
+let maior = array[0];
+let menor = array[0];
+
+for (index = 0; index < array.length; index += 1) {
+    if (array[index].length > maior.length) {
+        maior = array[index]
+    }
+}
+
+console.log(maior);
+
+for (index2 = 0; index2 < array.length; index2 += 1) {
+    if (array[index2].length < menor.length) {
+        menor = array[index2]
+    }
+}
+
+console.log(menor); */
+
+
+//4- Um número primo é aquele divisível apenas por 1 e por ele mesmo.
+//Sabendo disso, escreva um algoritmo que retorne o maior número primo entre 0 e 50.
+
+/*
+
+numeroprimo = [];
+
+for (index = 0; index <= 50; index += 1) {
+    if (index % 2 !== 0 && index % 3 !==0) {
+        numeroprimo.push(index)
+    }
+}
+
+console.log(numeroprimo);
+
+let maiornumeroprimo = 0;
+
+for (index2 = 0; index2 < numeroprimo.lenght; index2 += 1) {
+    if (numeroprimo[index2] > maiornumeroprimo) {
+        maiornumeroprimo = numeroprimo[index2]
+    }
+}
+
+console.log(maiornumeroprimo);
 
 
 
+*/
 
 
+/*let n = 7;
+let linha = "";
+
+for (index = 0; index < n; index += 1) {
+    linha = linha + "*";
+}
+
+for (index = 0; index < n; index += 1) {
+    console.log(linha);
+} */
 
 
+//2- Para o segundo exercício, faça o mesmo que antes, mas que imprima um triângulo
+//retângulo com 5 asteriscos de base.
+/*
+let n = 5;
+let linha = "*";
+
+console.log(linha)
+
+for (index = 0; index < n; index += 1) {
+    linha = linha + "*"
+    console.log(linha)
+}
+*/
 
 
+//let n = 5;
+//let linha = "";
+//let simbolo = "*";
+
+//for (index = 0; index < n; index += 1) {
+//    linha = linha + " ";
+//}
 
 
+/*for (index = 0; index < n; index += 1) {
+    linha = linha + "*"
+    console.log(linha);
+} */
 
+
+/* 6- Faça um programa que diz se um número definido numa variável é primo ou não.
+Um número primo é um número que só é divisível por 1 e por ele mesmo, ou seja,
+a divisão dele com quaisquer outros números dá resto diferente de zero.
+Dica: você vai precisar de fazer um loop que vá de 0 ao número definido;
+Além disso, vai precisar de fazer uma checagem a cada iteração e armazenar os resultados em algum lugar. */
+
+let numero = 36;
+let primos = [];
+let verificacao = false;
+
+for (index = 0; index <= numero; index +=1) {
+    if (index % 2 !== 0 && index % 3 !==0) {
+        primos.push(index);
+    }
+
+}
+
+console.log(primos);
+
+for (index2 = 0; index2 < primos.length; index2 +=1) {
+    if (primos[index2] = numero) {
+        verificacao = true;
+    }
+}
+
+console.log(verificacao);
