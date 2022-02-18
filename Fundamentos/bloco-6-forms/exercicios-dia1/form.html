@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Header da Página</h1>
+    </header>
+    
+    <main>
+        <form>
+            <fieldset>
+                <div class="nome-mail">
+                    <label for="user">Nome</label>
+                    <input type="text" id="user" name="nome-completo" placeholder="Digite seu nome completo" maxlength="40" minlength="10" required>
+                    <br>
+                    <label for="pass">Email</label>
+                    <input type="password" id="pass" name="email-user" placeholder="Digite seu E-mail" maxlength="50" minlength="10" required>
+                </div>
+
+                <div class="opcoes">
+                    <label for="o1">Opção 1</label>
+                    <input type="radio" id="o1" name="opcoes">
+                    <label for="o2">Opção 2</label>
+                    <input type="radio" id="o2" name="opcoes">
+                    <label for="o3">Opção 3</label>
+                    <input type="radio" id="o3" name="opcoes">
+                    <label for="o4">Opção 4</label>
+                    <input type="radio" id="o4" name="opcoes">
+                </div>
+
+                <div class="textarea">
+
+                    <label for="txt-a">Espaço para digitar a resposta:</label><br>
+                    <textarea name="texto" id="txt-a" cols="30" rows="10" maxlength="500"></textarea>     
+                </div>
+
+                <div class="dates">
+
+                    <label for="date">Data:</label>
+                    <input type="date" id="date"> 
+                </div>
+
+                <div class="dates">
+
+                    <label for="check1">Concordo 1</label>
+                    <input type="checkbox" id="check1"> <br>
+                    <label for="check2">Concordo 2</label>
+                    <input type="checkbox" id="check2"> 
+                </div>
+
+            </fieldset>
+            <button class="btn-enviar">Enviar</button>
+            <button class="btn-apagar">Apagar</button>
+        </form>
+    </main>
+    <script src="script.js"></script> 
+</body>
+</html>
