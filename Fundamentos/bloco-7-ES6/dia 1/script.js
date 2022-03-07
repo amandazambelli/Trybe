@@ -114,12 +114,18 @@ function longestWord(frase) {
     } 
   return guardaPalavra;
 }
+
 longestWord('Antônio foi no banheiro e não sabemos o que aconteceu');
+
+
 let frase = 'Antônio foi no banheiro e não sabemos o que aconteceu';
 let arraypalavras = [frase.split(' ')];
 console.log(arraypalavras)
+
 let guardaPalavra = arraypalavras[0];
+
 console.log(guardaPalavra.length);
+
 for (let index = 0; index < arraypalavras.length; index += 1) {
   if (arraypalavras[index] > guardaPalavra) {
     guardaPalavra = arraypalavras[index];
@@ -140,3 +146,5 @@ contador = 0;
 botao.addEventListener('click', function() {
   contador.innerHTML = contador + 1;
 });
+
+
